@@ -42,7 +42,7 @@
 }
 
 body {
-  background-image: url("imagem/alternativa.png");
+  background-image: url("./imagem/alternativa.png");
   color: var(--numeros);
   font-family: "Chakra Petch", sans-serif;
   background-size: cover;
