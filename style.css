@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
 
-  .body{
+  body{
     background-attachment: scroll;
   }
 
