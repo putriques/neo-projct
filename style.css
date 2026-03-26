@@ -22,10 +22,20 @@
 }
 
 @media (max-width: 768px) {
-  .numero{
-    font-size: 50px;
+
+  .body{
+    background-attachment: scroll;
+  }
+
+  .titulo-principal{
+    font-size: 24px;
   }
   
+  .botao {
+    font-size: 14px;
+    padding: 0.8em;
+  }
+
   .tempo{
     gap: 15px;
   }
@@ -65,7 +75,7 @@ body {
 }
 
 .botao {
-  font-family: "Crakra Petch", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   background-color: var(--botao-inativo);
   color: var(--branco);
   display: flex;
@@ -78,6 +88,7 @@ body {
   border-left: 2px solid var(--cor-bordas);
   border-right: 2px solid var(--cor-bordas);
   border-top: none;
+  flex: 1 1 150px;
 }
 
 .escuro {
@@ -86,6 +97,7 @@ body {
 
 .botoes {
   display: flex;
+  flex-wrap: wrap;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
 }
@@ -110,7 +122,7 @@ body {
 }
 
 .numero {
-  font-size: 100px;
+  font-size: clamp(40px, 10vh, 100px);
 }
 
 .bloco {
@@ -127,7 +139,7 @@ body {
 
 .grade {
   background-color: var(--cor-fundo-tempo);
-  padding: 40px 20px;
+  padding: clamp(20px, 5vw, 40px) 20px;
   border-radius: 0 0 40px 40px;
   width: 100%; /* vai ocupar exatamente a largura da div pai (.botoes-e-grade) */
 }
@@ -140,3 +152,7 @@ body {
   color: var(--titulo-principal);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
